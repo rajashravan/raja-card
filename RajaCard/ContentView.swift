@@ -29,17 +29,8 @@ struct ContentView: View {
                     .foregroundStyle(.white)
                     .font(.system(size: 25))
                 Divider()
-                RoundedRectangle(cornerRadius: 20.0)
-                    .fill(.white)
-                    .frame(height: 45.0)
-                    .overlay(
-                        HStack{
-                            Image(systemName: "phone.fill")
-                                .foregroundColor(.green)
-                            Text("929-353-2764")
-                        }
-                    )
-                
+                InfoView(text: "929-353-2764", imageName: "phone.fill")
+                InfoView(text: "rajashravan32@gmail.com", imageName: "envelope.fill")
             }
         }
     }
@@ -48,3 +39,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
